@@ -23,6 +23,7 @@ public class SpringDocConfig {
                                 .name("Giulia")
                                 .url("https://develhope.co")
                                 .email("Giulia@live.it")))
-                .tags(List.of(new Tag().name("name-controller")));
+                .tags(List.of(new Tag().name("name-controller")
+                        .description("This controller return the name of the user")));
     }
 }
