@@ -1,0 +1,332 @@
+{
+	"info": {
+		"_postman_id": "bbdf3e3e-4c0d-4bf1-825b-5f3c46a85339",
+		"name": "Swagger_02",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26043911"
+	},
+	"item": [
+		{
+			"name": "GetMultiplication",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5050/multiplication?a=2&b=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"multiplication"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "2"
+						},
+						{
+							"key": "b",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetMultiplication",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5050/multiplication?a=2&b=4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								"multiplication"
+							],
+							"query": [
+								{
+									"key": "a",
+									"value": "2"
+								},
+								{
+									"key": "b",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Apr 2023 07:48:09 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "8"
+				}
+			]
+		},
+		{
+			"name": "GetWelcome",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5050/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetWelcome",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5050/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "16"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Apr 2023 07:49:05 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Welcome to math."
+				}
+			]
+		},
+		{
+			"name": "GetDivisionInfo",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5050/division-info",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"division-info"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetDivisionInfo",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5050/division-info",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								"division-info"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Apr 2023 07:50:04 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"division\",\n    \"minNumberOfOperands\": 2,\n    \"description\": \"Performs division operation on two operands\",\n    \"properties\": [\n        \"Only works with numeric operands\",\n        \"Throws an exception if the second operand is zero\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GetSquare",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5050/square/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"square",
+						"8"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetSquare",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5050/square/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								"square",
+								"8"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Apr 2023 07:50:32 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "64"
+				}
+			]
+		}
+	]
+}
